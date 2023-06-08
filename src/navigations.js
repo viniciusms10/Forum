@@ -4,6 +4,7 @@ import { componentRoutes } from './componentsRoutes'
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
 import DataComp from './views/DataComp/DataComp'
+import Forum from './views/Forum/Forum'
 import MyComp from './views/MyComp/MyComp'
 
 //Aqui são os componentes de rota importados
@@ -36,13 +37,7 @@ export const navigate = [
         component: <Cursos/>,
         template: true,
     },
-    // {
-    //     path: '/forum',
-    //     name: 'FÓRUM',
-    //     title: "Diploma e Programa EAD",
-    //     component: <Home/>,
-    //     template: true,
-    // },
+     
     {
         path: '/menuareas',
         name: 'ÁREAS',
@@ -87,6 +82,13 @@ export const navigate = [
         component: <MyComp/>,
         template: true,
     },
+    {
+         path: '/forum',
+         name: 'FÓRUM',
+         title: "Fórum",
+         component: <Forum/>,
+         template: true,
+     },
     {
         path: '/contact',
         name: 'CONTATO',
